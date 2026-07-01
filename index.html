@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages 测试页面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub Pages 测试</h1>
+            <p class="subtitle">一个原生 HTML/CSS/JS 页面</p>
+        </header>
+
+        <main>
+            <section class="card" id="counter-section">
+                <h2>计数器</h2>
+                <div class="counter-display">
+                    <span id="counter-value">0</span>
+                </div>
+                <div class="button-group">
+                    <button id="btn-decrease" class="btn">-</button>
+                    <button id="btn-reset" class="btn btn-reset">重置</button>
+                    <button id="btn-increase" class="btn">+</button>
+                </div>
+            </section>
+
+            <section class="card" id="todo-section">
+                <h2>待办事项</h2>
+                <div class="todo-input-group">
+                    <input type="text" id="todo-input" placeholder="添加新的待办事项...">
+                    <button id="btn-add" class="btn btn-add">添加</button>
+                </div>
+                <ul id="todo-list" class="todo-list"></ul>
+            </section>
+
+            <section class="card" id="color-section">
+                <h2>主题颜色</h2>
+                <div class="color-picker-group">
+                    <button class="color-btn" data-color="#667eea" style="background: #667eea;"></button>
+                    <button class="color-btn" data-color="#f093fb" style="background: #f093fb;"></button>
+                    <button class="color-btn" data-color="#4facfe" style="background: #4facfe;"></button>
+                    <button class="color-btn" data-color="#43e97b" style="background: #43e97b;"></button>
+                    <button class="color-btn" data-color="#fa709a" style="background: #fa709a;"></button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>部署于 GitHub Pages | <span id="current-time"></span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
